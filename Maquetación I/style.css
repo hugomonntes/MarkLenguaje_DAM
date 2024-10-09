@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    font-family:sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    margin: 20px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divHeader{
+    background-color: transparent;
+}
+.divHeader h1{
+    background-color: transparent;
+}
+.mainDiv{
+    width: 90%;
+    margin: 20px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.divChild1, .divChild2{
+    width: 40%;
+    margin: 20px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px 10px rgb(255, 0, 0);
+}
+.divChild2 button{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border: 0;
+    height: 100%;
+    border-radius: 10px;
+}
+.divChild1:hover, .divChild2 button:focus{
+    box-shadow: 0px 0px 10px 15px rgb(0, 21, 255);
+}
+.p1::first-letter{
+    font-size: 100px;
+}
+.p1::first-line{
+    font-size: 35px;
+}
+.lista{
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+ul{
+    list-style: none;
+    display: inline-flex;
+    border: solid 2px;
+    padding: 0;
+}
+ul li{
+    padding: 5px;
+    margin: 5px;
+    border: solid 2px;
+}
+ul li:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+}
