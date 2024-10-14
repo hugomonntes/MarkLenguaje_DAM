@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+}
+
+html body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 260px;
+    background-color: #286af0;
+}
+
+.divLogo{
+    width: 100%;
+    height: 80px;
+    padding: 15px;
+}
+
+.divLogo img{
+    width: 200px;
+    height: 80px;
+}
+
+.divTitle{
+    margin-top: 25px;
+    width: 100%;
+    height: 30px;
+    padding: 15px;
+}
+
+.divTitle h1{
+    text-shadow: 3px 3px White;
+    text-transform: uppercase;
+}
+
+nav{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: #163c88;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 8px;
+}
+
+main{
+    width: 100%;
+    height: 650px;
+    background-color: rgb(141, 141, 141);
+    display: inline-flex;
+}
+
+.containerMain{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(141, 141, 141);
+    padding: 20px;
+}
+
+.divImg{
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.divImg img{
+    width: 100px;
+    height: 150px;
+}
+
+.mainText{
+    width: 70%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.divText{
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerLateral{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 30%;
+    background-color: white;
+    height: 100%;
+    overflow: scroll;
+    overflow-x:hidden;
+}
+
+footer{
+    background-color: #286af0;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}

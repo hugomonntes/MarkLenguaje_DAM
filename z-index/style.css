@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+div{
+    width: 300px;
+    height: 300px;
+}
+
+.clase1{
+    background-color: rgb(255, 0, 255);
+    z-index: 1;
+    position: absolute;
+}
+
+.clase2{
+    background-color: chartreuse;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    z-index: 2;
+}
+
+.clase3{
+    background-color: cornflowerblue;
+    position: absolute;
+    left: 65px;
+    top: 65px;
+    z-index: 3;
+}
+
+.clase4{
+    background-color: tomato;
+    position: absolute;
+    left: 95px;
+    top: 95px;
+    z-index: 4;
+}
+
+.clase1:hover, .clase2:hover, .clase3:hover, .clase4:hover{
+    z-index: 5;
+}
