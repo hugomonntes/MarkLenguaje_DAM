@@ -16,6 +16,10 @@ label, input, select{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+textarea{
+    resize: none;
+}
+
 input, select{
     width: 300px;
     border-radius: 50px;
