@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forms">
+    <meta name="keywords" content="">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="">Introduce tu nombre: </label>
+        <input type="text" placeholder="Juan" name="nombre" id="nombre">
+        <label for="">Introduce tus apellidos: </label>
+        <input type="text" placeholder="Lewandowski Martinez" name="apellidos" id="apellidos">
+        <label for="">Introduce tu fecha de nacimiento: </label>
+        <input type="date" name="" id="">
+        <label for="">Introduce tu email: </label>
+        <input type="email" name="" id="">
+        <label for="">Introduce tu contraseña: </label>
+        <input type="password" name="" id="">
+        <label for="">Introduce tu Comunidad Autónoma: </label>
+        <select name="comunidades" id="comunidades">
+            <option value="">--Seleccionar--</option>
+            <optgroup>
+                <option value="Galicia">Galicia</option>
+                <option value="Madrid">Madrid</option>
+                <option selected value="Barcelona">Barcelona</option>
+                <option value="País Vasco">País Vasco</option>
+                <option value="Asturias">Asturias</option>
+            </optgroup>
+        </select>
+        <div class="buttons">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Check">
+        </div>
+        <label style="margin-top: 150px;" for="">Selecciona estado civil: </label>
+        <div class="estados">
+            <div>
+                <span>Casado</span><input type="radio" name="estado" id=""
+                value="Soltero">
+            </div>
+            <div>
+                <span>Soltero</span><input type="radio" name="estado" id="">
+            </div>
+            <div>
+                <span>Divorciado</span><input type="radio" name="estado" id="">
+            </div>
+            <div>
+                <span>Viudo</span><input type="radio" name="estado" id="">
+            </div>
+        </div>
+
+        <label for="">Selecciona revista favorita: </label>
+        <div class="revistas">
+            <div>
+                <span>Marca</span><input checked type="checkbox" name="estado" id="">
+            </div>
+            <div>
+                <span>As</span><input type="checkbox" name="estado" id="">
+            </div>
+            <div>
+                <span>Mundo Deportivo</span><input type="checkbox" name="estado" id="">
+            </div>
+            <div>
+                <span>Sport</span><input type="checkbox" name="estado" id="">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
