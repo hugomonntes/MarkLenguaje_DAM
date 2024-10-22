@@ -10,33 +10,100 @@
 </head>
 <body>
     <form action="#" method="post">
-        <label for="">Introduce tu nombre: </label>
-        <input type="text" placeholder="Juan" name="nombre" id="nombre">
-        <label for="">Introduce tus apellidos: </label>
-        <input type="text" placeholder="Lewandowski Martinez" name="apellidos" id="apellidos">
-        <label for="">Introduce tu fecha de nacimiento: </label>
-        <input type="date" name="" id="">
-        <label for="">Introduce tu email: </label>
-        <input type="email" name="" id="">
-        <label for="">Introduce tu contraseña: </label>
-        <input type="password" name="" id="">
-        <label for="">Introduce tu Comunidad Autónoma: </label>
-        <select name="comunidades" id="comunidades">
-            <option value="">--Seleccionar--</option>
-            <optgroup>
-                <option value="Galicia">Galicia</option>
-                <option value="Madrid">Madrid</option>
-                <option selected value="Barcelona">Barcelona</option>
-                <option value="País Vasco">País Vasco</option>
-                <option value="Asturias">Asturias</option>
-            </optgroup>
-        </select>
-        <textarea name="" id="" placeholder="Comenta aquí..."></textarea>
-        
-        <div class="buttons">
-            <input type="reset" value="Reset">
-            <input type="submit" value="Check">
-        </div>
+        <table>
+            <tr>
+                <td>
+                    <label for="">Introduce tu nombre: </label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Juan" name="nombre" id="nombre">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Introduce tus apellidos: </label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Lewandowski Martinez" name="apellidos" id="apellidos">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Introduce tu fecha de nacimiento: </label>
+                </td>
+                <td>
+                    <input type="date" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Introduce tu email: </label>
+                </td>
+                <td>
+                    <input type="email" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Introduce tu contraseña: </label>
+                </td>
+                <td>
+                    <input type="password" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Introduce tu Comunidad Autónoma: </label>
+                </td>
+                <td>
+                    <select name="comunidades" id="comunidades">
+                        <option value="">--Seleccionar--</option>
+                        <optgroup label="Comunidades Top">
+                            <option value="Galicia">Galicia</option>
+                            <option value="Madrid">Madrid</option>
+                            <option selected value="Barcelona">Barcelona</option>
+                            <option value="País Vasco">País Vasco</option>
+                            <option value="Asturias">Asturias</option>
+                        </optgroup>
+                        <optgroup label="Comunidades Inf">
+                            <option value="Valencia">Valencia</option>
+                            <option value="Valencia">Castilla Leon</option>
+                            <option value="Valencia">Castilla la Mancha</option>
+                            <option value="Valencia">La Rioja</option>
+                            <option value="Valencia">Tenerife</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Suma de numeros: </label>
+                </td>
+                <td>
+                    <input type="number" id="n1" value="" placeholder="Introduce un numero:">
+                    <input type="number" id="n2" value="" placeholder="Introduce un numero:">
+                    <input type="button" onclick="suma()" value="Calcular">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Resultado: </label>
+                </td>
+                <td>
+                    <input type="text" id="n3" readonly>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="reset" value="Reset">
+                </td>
+                <td>
+                    <input type="submit" value="Check">
+                </td>
+            </tr>
+        </table>
+
         <label style="margin-top: 150px;" for="">Selecciona estado civil: </label>
         <div class="estados">
             <div>
@@ -70,5 +137,7 @@
             </div>
         </div>
     </form>
+
+    <script src="app.js"></script>
 </body>
 </html>
