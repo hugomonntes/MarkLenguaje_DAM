@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tipos de input</h1>
+
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    <label for="">Usuario: </label>
+                    <input type="text" placeholder="Nombre de Usuario">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Contraseña: </label>
+                    <input type="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Mantener conectado</label>
+                    <input checked type="checkbox">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Preferencias</label>
+                    <input type="radio">
+                    <span>Mañana</span>
+                    <input type="radio">
+                    <span>Tarde</span>
+                    <input type="radio">
+                    <span>Noche</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Reservar</label>
+                    <input type="radio">
+                    <span>Hotel</span>
+                    <input type="radio">
+                    <span>Coche</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Ciudad</label>
+                    <select name="" id="">
+                        <option selected value="">Vigo</option>
+                        <option value="">A coruña</option>
+                        <option value="">Lugo</option>
+                        <option value="">Ourense</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Subir Foto</label>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Enviar">
+                    <input type="submit" value="✔️">
+                    <input type="reset">
+                    <input type="reset" value="🗑️">
+                    <input type="button" value="Cerrar" onclick="cerrarPestaña()">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function cerrarPestaña(){
+            window.close();
+        }
+    </script>
+</body>
+</html>
