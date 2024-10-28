@@ -46,3 +46,7 @@ span{
 input[type="radio"]{
     width: 50px;
 }
+.butImg {
+    width: 100px;
+    height: 50px;
+}

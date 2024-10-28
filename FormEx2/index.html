@@ -68,20 +68,71 @@
             </tr>
             <tr>
                 <td>
-                    <input type="submit" value="Enviar">
-                    <input type="submit" value="✔️">
+                    <input type="submit" value="Enviar">    
                     <input type="reset">
-                    <input type="reset" value="🗑️">
-                    <input type="button" value="Cerrar" onclick="cerrarPestaña()">
+                    <button onclick="window.close()">Salir</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="butImg" type="submit"><img src="/FormEx2/img/check.jpg" alt=""></button>
+                    <button class="butImg" type="reset"><img src="/FormEx2/img/papelera.png" alt=""></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Tipo de cliente</legend>
+                        <table class="tablaTiposCliente">
+                            <tr>
+                                <td>
+                                    <input type="radio">
+                                    <span>Particular</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio">
+                                    <span>Asociación</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio">
+                                    <span>Empresa</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Información de Interés</legend>
+                        <span>Comentarios</span>
+                        <textarea placeholder="Escribe aquí tus comentarios..." maxlength="60" rows="6"></textarea>
+                        <input checked type="checkbox">
+                        <span>Acepto recibir publicidad</span>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select>
+                        <optgroup label="Camisas">
+                            <option>Manga Larga</option>
+                            <option>Manga Corta</option>
+                        </optgroup>
+                        <optgroup label="Pantalones">
+                            <option>Pitillo</option>
+                            <option>Campana</option>
+                            <option>Corto</option>
+                        </optgroup>
+                    </select>
                 </td>
             </tr>
         </table>
     </form>
-
-    <script>
-        function cerrarPestaña(){
-            window.close();
-        }
-    </script>
 </body>
 </html>
