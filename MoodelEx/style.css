@@ -1,0 +1,130 @@
+*{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    border-bottom: solid 1px white;
+    background-color: #2B4E84;
+    position: fixed;
+    top: 0;
+}
+
+main{
+    padding: 5px;
+    margin-top: 60px;
+    background-color: #3E65A0;
+    width: 100%;
+    height: 60px;
+
+}
+
+.logoVivas{
+    width: 50%;
+    height: 100%;
+}
+
+.logoVivas img{
+    width: 200px;
+}
+
+.contenido{
+    width: 100%;
+    height: 800px;
+    background-color: #E3E6EA;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.divForm{
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(160, 160, 160);
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.imgVivas{
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.imgVivas img{
+    width: 80%;
+    height: 120px;
+}
+
+.formUser{
+    width: 100%;
+    height: 50%;
+    border-bottom: solid 1px rgb(183, 183, 183);
+    border-spacing: 20px;
+}
+
+.formUser form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formUser form input{
+    margin: 10px;
+    margin-left: 0;
+    width: 200px;
+    height: 35px;
+    border:solid 1px rgb(195, 195, 195);
+}
+
+.formUser form input::placeholder{
+    padding: 10px;
+    font-size: 16px;
+}
+
+.accederBtn{
+    margin: 10px;
+    margin-left: 0;
+    width: 120px;
+    height: 50px;
+    background-color: #3E65A0;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+}
+
+.formUser form a{
+    margin: 10px;
+    margin-left: 0;
+    font-size: 18px;
+    color: #3E65A0;
+    text-decoration: none;
+}
+
+.btnText .enlace{
+    margin: 10px;
+    margin-left: 0;
+    font-size: 18px;
+    color: #3E65A0;
+    text-decoration: none;
+}
+
+.cookiesBtn{
+    background-color: #B1BBC4;
+    margin: 10px;
+    margin-left: 50px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 18px;
+    color: #646464;
+}
