@@ -41,6 +41,11 @@ main{
     display: flex;
 }
 
+nav{
+    width: 100%;
+    display: flex;
+}
+
 .divForm{
     width: 600px;
     height: 600px;
@@ -49,6 +54,31 @@ main{
     border-radius: 10px;
     flex-direction: column;
     padding: 40px;
+}
+
+.selectIdioma{
+    width: 50%;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+}
+
+.selectIdioma select{
+    width: 300px;
+    padding: 16px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+.selectIdioma select:hover, option:hover{
+    background-color: #2B4E84;
+}
+
+.selectIdioma option{
+    background-color: #3E65A0;
+    border: 1px solid white;
 }
 
 .imgVivas{

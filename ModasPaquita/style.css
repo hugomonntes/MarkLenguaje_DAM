@@ -1,0 +1,14 @@
+.datosPersonales{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.datosCliente{
+    width: 70%;
+}
+
+.tiposCliente{
+    width: 30%;
+}

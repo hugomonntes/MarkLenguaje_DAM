@@ -10,12 +10,56 @@
     <h1>Modas Paquita</h1>
     <fieldset>
         <legend>
-            Formulario de pedido
+            <h1>
+                Formulario de pedido
+            </h1>
         </legend>
         <h2>Datos Personales</h2>
         <div class="datosPersonales">
-            <fieldset>
+            <fieldset class="datosCliente">
                 <legend>Datos del Cliente</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="">Correo electrónico: </label>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Contraseña: </label>
+                            <input type="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>(Longitud mínima 6 carácteres)</span>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset class="tiposCliente">
+                <legend>Tipos de cliente</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio">
+                            <span>Particular</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio">
+                            <span>Asociación</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio">
+                            <span>Empresa</span>
+                        </td>
+                    </tr>
+                </table>
             </fieldset>
         </div>
     </fieldset>
