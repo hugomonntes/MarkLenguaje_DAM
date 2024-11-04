@@ -5,6 +5,10 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+body{
+    background-color: #E3E6EA;
+}
+
 header{
     width: 100%;
     height: 60px;
@@ -15,15 +19,15 @@ header{
 }
 
 main{
-    padding: 5px;
     margin-top: 60px;
     background-color: #3E65A0;
     width: 100%;
-    height: 60px;
+    height: 70px;
 
 }
 
 .logoVivas{
+    padding: 10px;
     width: 50%;
     height: 100%;
 }
@@ -33,9 +37,9 @@ main{
 }
 
 .contenido{
+    margin-top: 10px;
     width: 100%;
     height: 800px;
-    background-color: #E3E6EA;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -61,11 +65,13 @@ nav{
     justify-content: end;
     align-items: center;
     display: flex;
+    margin-right: 10px;
 }
 
 .selectIdioma select{
-    width: 300px;
-    padding: 16px;
+    padding: 15px;
+    outline: none;
+    width: 260px;
     background-color: transparent;
     color: white;
     font-size: 16px;
@@ -79,6 +85,22 @@ nav{
 .selectIdioma option{
     background-color: #3E65A0;
     border: 1px solid white;
+}
+
+.selectIdioma2 select{
+    width: 300px;
+    padding: 16px;
+    padding-left: 0;
+    background-color: transparent;
+    color: #3E65A0;
+    font-size: 16px;
+    border: none;
+}
+
+.selectIdioma2 option{
+    background-color: #3E65A0;
+    border: 1px solid white;
+    color: white;
 }
 
 .imgVivas{
@@ -107,6 +129,7 @@ nav{
 }
 
 .formUser form input{
+    padding: 10px;
     margin: 10px;
     margin-left: 0;
     width: 200px;
@@ -115,8 +138,11 @@ nav{
 }
 
 .formUser form input::placeholder{
-    padding: 10px;
     font-size: 16px;
+}
+
+.formUser form input:focus{
+    outline: 1px solid #2B4E84;
 }
 
 .accederBtn{
@@ -129,6 +155,7 @@ nav{
     border-radius: 10px;
     border: 0;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .formUser form a{
@@ -139,22 +166,42 @@ nav{
     text-decoration: none;
 }
 
-.btnText .enlace{
-    margin: 10px;
+.btnTxt{
+    margin: 20px;
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectIdioma2{
+    margin-left: 0;
+    width: 50%;
     margin-left: 0;
     font-size: 18px;
     color: #3E65A0;
     text-decoration: none;
+    border-right: solid 1px rgb(183, 183, 183);
+}
+
+.selectIdioma2 select{
+    outline: none;
+    width: 250px;
+}
+
+.divCookies{
+    width: 50%;
 }
 
 .cookiesBtn{
+    margin-left: 10px;
     background-color: #B1BBC4;
-    margin: 10px;
-    margin-left: 50px;
     width: 200px;
     height: 50px;
     border-radius: 10px;
     border: 0;
     font-size: 18px;
     color: #646464;
+    cursor: pointer;
 }
