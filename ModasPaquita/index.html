@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Modas Paquita</h1>
+    <form>
     <fieldset>
         <legend>
             <h1>
@@ -43,25 +44,112 @@
                 <table>
                     <tr>
                         <td>
-                            <input type="radio">
+                            <input type="radio" name="r">
                             <span>Particular</span>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="radio">
+                            <input type="radio" name="r">
                             <span>Asociación</span>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="radio">
+                            <input type="radio" name="r">
                             <span>Empresa</span>
                         </td>
                     </tr>
                 </table>
             </fieldset>
         </div>
+
+        <h2>Pedidos</h2>
+        <div class="datosPedido">
+            <fieldset class="datosProducto">
+                <legend>Datos del Producto</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <select>
+                                <optgroup label="Camisas">
+                                    <option>Manga Larga</option>
+                                    <option>Manga Corta</option>
+                                </optgroup>
+                                <optgroup label="Pantalones">
+                                    <option>Pitillo</option>
+                                    <option>Campana</option>
+                                    <option>Corto</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset class="infoInteres">
+                <legend>Información de Interés</legend>
+                <div><span>Comentarios</span></div>
+                <textarea placeholder="Escribe aquí tus comentarios..." maxlength="60" rows="6"></textarea>
+                <div>
+                    <input checked type="checkbox">
+                    <span>Acepto recibir publicidad</span>
+                </div>
+            </div>
+            <div class="datos">
+                <div class="datosEnvio">
+                    <fieldset>
+                        <legend>Datos de Envío</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="">Dirección: </label>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="">Ciudad: </label>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="">Código Postal: </label>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <input class="if" type="submit" value="Enviar Pedido">
+                </div>
+                <div class="datosBancarios">
+                    <fieldset>
+                        <legend>Datos Bancarios</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="">Nombre de la entidad: </label>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="">Nº de cuenta: </label>
+                                    <input type="number">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <br>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <input class="if" type="reset" value="Borrar Formulario">
+                </div>
+            </div>
+        </div>
     </fieldset>
+</form>
 </body>
 </html>

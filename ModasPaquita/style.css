@@ -12,3 +12,39 @@
 .tiposCliente{
     width: 30%;
 }
+
+.datosPedido{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.datosProducto{
+    width: 30%;
+    height: 120px;
+}
+
+.infoInteres{
+    flex-direction: column;
+    width: 70%;
+    display: flex;
+    height: 120px;
+}
+
+.datos{
+    width: 100%;
+    display: flex;
+}
+
+.datosEnvio{
+    width: 50%;
+}
+
+.datosBancarios{
+    width: 50%;
+}
+
+.if{
+    width: 50px;
+}
