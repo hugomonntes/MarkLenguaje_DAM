@@ -80,6 +80,7 @@ nav{
 
 .selectIdioma select:hover, option:hover{
     background-color: #2B4E84;
+    cursor: pointer;
 }
 
 .selectIdioma option{
@@ -143,6 +144,7 @@ nav{
 
 .formUser form input:focus{
     outline: 1px solid #2B4E84;
+    cursor: pointer;
 }
 
 .accederBtn{
