@@ -64,6 +64,10 @@ main .contenido{
     font-size: 20px;
 }
 
+li:hover{
+    cursor: pointer;
+}
+
 .forms{
     width: 100%;
     height: 85%;
