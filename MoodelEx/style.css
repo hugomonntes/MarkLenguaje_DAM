@@ -160,6 +160,11 @@ nav{
     cursor: pointer;
 }
 
+.accederBtn:hover{
+    background-color: #123366;
+    cursor: pointer;
+}
+
 .formUser form a{
     margin: 10px;
     margin-left: 0;
@@ -206,4 +211,8 @@ nav{
     font-size: 18px;
     color: #646464;
     cursor: pointer;
+}
+
+.cookiesBtn:hover{
+    border: 1px solid rgb(110, 110, 110);
 }

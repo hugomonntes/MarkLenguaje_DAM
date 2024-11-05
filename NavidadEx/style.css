@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-image: url(/MarkLenguaje-DAM/NavidadEx/img/cabecera_navidad.jpg);
+    background-size:contain;
+    height: 100vh;
+}
+
+header{
+    width: 100vw;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+h1{
+    font-family: Berkshire Swash;
+    font-style: italic;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 4px;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+}
+
+main .contenido{
+    width: 100vw;
+    height: 75%;
+    background-color: blueviolet;
+}
+
+.bar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.bar ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+
+.bar ul li{
+    margin-right: 60px;
+    font-size: 20px;
+}
+
+.forms{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    width: 45%;
+    height: 90%;
+    background-color: rgb(189, 129, 230);
+    border-radius: 20px;
+    margin: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.titleF{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+}
+
+.formulario .titleF h3{
+    color: white;
+    font-size: 25px;
+    width: 100%;
+}
+
+.felizNavidad{
+    margin: 20px;
+    width: 45%;
+    height: 90%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    width: 70%;
+}
+
+table tr{
+    margin: 20px;
+}
+
+form span{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+input{
+    width: 250px;
+    height: 20px;
+}
+
+input[type="radio"]{
+    width: 30px;
+}
+
+.boton{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"]{
+    width: 250px;
+    height: 30px;
+    border: 0;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+.imgNavidad{
+    width: 100%;
+    height: 35%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.imgNavidad img{
+    height: 100%;
+}
+
+.txtNavidad{
+    width: 50%;
+    height: 30%;
+}
+
+.txtNavidad p{
+    font-size: 20px;
+}
+
+.newsletter{
+    height: 40%;
+    width: 40%;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+}
