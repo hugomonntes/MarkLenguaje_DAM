@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+/* @media (min-width: 1200px){
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 750px) AND (max-width: 1199px){
+    .col-1-m {
+        width: 8.33%;
+    }
+    .col-2-m {
+        width: 16.66%;
+    }
+    .col--m {
+        width: 25%;
+    }
+    .col-4-m {
+        width: 33.33%;
+    }
+    .col-5-m {
+        width: 41.66%;
+    }
+    .col-6-m {
+        width: 50%;
+    }
+    .col-7-m {
+        width: 58.33%;
+    }
+    .col-8-m {
+        width: 66.66%;
+    }
+    .col-9-m {
+        width: 75%;
+    }
+    .col-10-m {
+        width: 83.33%;
+    }
+    .col-11-m {
+        width: 91.66%;
+    }
+    .col-12-m {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) AND (max-width: 1600px) {
+    body {
+        background-color: black;
+    }
+}
+
+@media (min-width: 750px) AND (max-width: 1199px) {
+    body {
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+@media (max-width: 749px) {
+    body {
+        background-color: rgb(0, 255, 13);
+    }
+}
+
+.fila::after {
+    content: "";
+    clear: both;
+    display: block;
+} */
+
+/*EJERCICIO*/
+
+.header{
+    background-color: lightblue;
+    color: white;
+    padding: 15px;
+}
+
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: blue;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 10px black;
+}
+
+.menu li:hover{
+    background-color: rgb(97, 97, 228);
+    color: black;
+}
+
+.aside img{
+    max-width: 100%;
+    height: auto;
+}
+
+.footer{
+    background-color: lightskyblue;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+}
+
+.col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    
+    .header{
+        background-color: lightskyblue;
+        color: white;
+        padding: 15px;
+    }
+    menu ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    menu.li{
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: blue;
+        color: white;
+        border-radius: 3px;
+        box-shadow: 0 1px 3px
+            rgba (0,0,0,0,12), 0 1px 2px
+            rgba (0,0,0,0,24);
+        }
+    .menu li:hover{
+        background-color: #0099cc;
+        color: black;
+    }
+    .aside img{
+        max-width: 100%;
+        height: auto;
+    }
+    .footer{
+        background-color: lightskyblue;
+        color: white;
+        text-align: center;
+        font-size: 10px;
+        padding: 10px;
+    }
+    
+    
+    @media only screen and (width <= 768px){
+        .header{
+            background-color: salmon;
+            color: white;
+            padding: 15px;
+        }
+
+        menu.li{
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: salmon;
+            color: white;
+            border-radius: 3px;
+            box-shadow: 0 1px 3px black;
+            }
+        .menu li:hover{
+            background-color: pink;
+            color: black;
+        }
+        .footer{
+            background-color: pink;
+            color: white;
+            text-align: center;
+            font-size: 10px;
+            padding: 10px;
+        }
+    }
