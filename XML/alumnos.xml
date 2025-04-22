@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="alumnos.dtd" type="application/xml-dtd"?> <!-- Lo mismo que las líneas de abajo -->
+<!-- <!DOCTYPE alumnos SYSTEM "alumnos.dtd">
+<alumnos>
+</alumnos> -->
+<alumnos>
+    <alumno codigo="FR92">
+        <nombre></nombre>
+        <apellidos></apellidos>
+        <direccion numero="" piso="" puerta=""></direccion>
+        <dni></dni>
+        <asignaturas>
+            <asignatura>
+                <nombre></nombre>
+                <codigo></codigo>
+                <horas></horas>
+            </asignatura>
+        </asignaturas>
+    </alumno>
+
+    <alumno codigo="HM20">
+        <nombre></nombre>
+        <apellidos></apellidos>
+        <direccion numero="" piso="" puerta=""></direccion>
+        <dni></dni>
+        <asignaturas>
+            <asignatura>
+                <nombre></nombre>
+                <codigo></codigo>
+                <horas></horas>
+            </asignatura>
+        </asignaturas>
+    </alumno>
+
+    <alumno codigo="IK22">
+        <nombre></nombre>
+        <apellidos></apellidos>
+        <direccion numero="" piso="" puerta=""></direccion>
+        <dni></dni>
+        <asignaturas>
+            <asignatura>
+                <nombre></nombre>
+                <codigo></codigo>
+                <horas></horas>
+            </asignatura>
+        </asignaturas>
+    </alumno>
+</alumnos>

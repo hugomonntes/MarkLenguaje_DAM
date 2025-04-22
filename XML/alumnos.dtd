@@ -1,0 +1,1 @@
+<!ELEMENT alumnos (alumno+)+> <!-- 1 o muchos alumnos, si se pone el + fuera afecta a todas las etiquetas -->
