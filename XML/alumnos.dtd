@@ -1,4 +1,16 @@
-<!ELEMENT alumnos (alumno+)+> <!-- 1 o muchos alumnos, si se pone el + fuera afecta a todas las etiquetas -->
-<!ELEMENT alumno (nombre, apellido, direccion?, DNI, asiganturas)> <!-- ? Indica si un campo es opcional -->
+<!ELEMENT alumnos (alumno)+> <!-- 1 o muchos alumnos, si se pone el + fuera afecta a todas las etiquetas -->
+<!ELEMENT alumno (nombre,apellido,direccion?,dni,(hombre | mujer),asignaturas)> <!-- ? Indica si un campo es opcional -->
+<!ELEMENT nombre (#PCDATA)> <!-- PCDATA == String -->
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ATTLIST direccion numero CDATA #REQUIRED>
+<!ATTLIST direccion piso CDATA #IMPLIED> <!-- Opcional -->
+<!ATTLIST direccion puerta CDATA #IMPLIED>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT hombre EMPTY>
+<!ELEMENT mujer EMPTY>
+<!ATTLIST alumno codigo ID #REQUIRED>
 <!ELEMENT asignaturas (asignatura)+>
-<!ELEMENT asigantura (nombre, codigo, horas)> <!-- Es necesario continuar el orden de las etiquetas XML -->
+<!ELEMENT asignatura (nombre,codigo,horas)> <!-- Es necesario continuar el orden de las etiquetas XML -->
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT horas (#PCDATA)>

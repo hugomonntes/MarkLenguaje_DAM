@@ -9,6 +9,7 @@
         <apellidos></apellidos>
         <direccion numero="" piso="" puerta=""></direccion>
         <dni></dni>
+        <hombre></hombre>
         <asignaturas>
             <asignatura>
                 <nombre></nombre>
