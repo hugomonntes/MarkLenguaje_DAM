@@ -1,1 +1,4 @@
 <!ELEMENT alumnos (alumno+)+> <!-- 1 o muchos alumnos, si se pone el + fuera afecta a todas las etiquetas -->
+<!ELEMENT alumno (nombre, apellido, direccion?, DNI, asiganturas)> <!-- ? Indica si un campo es opcional -->
+<!ELEMENT asignaturas (asignatura)+>
+<!ELEMENT asigantura (nombre, codigo, horas)> <!-- Es necesario continuar el orden de las etiquetas XML -->
