@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="ListaCompra.dtd" type="application/xml-dtd"?>
+<listaCompra>
+    <venta>
+        <ventaCredito>
+            <fechafinpago></fechafinpago>
+            <cantidad></cantidad>
+        </ventaCredito>
+    </venta>
+
+    <venta>
+        <ventaInmediata>
+            <cantidad></cantidad>
+            <divisas></divisas>
+        </ventaInmediata>
+    </venta>
+</listaCompra>

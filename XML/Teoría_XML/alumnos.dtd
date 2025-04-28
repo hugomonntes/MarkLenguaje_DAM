@@ -1,5 +1,6 @@
 <!ELEMENT alumnos (alumno)+> <!-- 1 o muchos alumnos, si se pone el + fuera afecta a todas las etiquetas -->
-<!ELEMENT alumno (nombre,apellido,direccion?,dni,(hombre | mujer),asignaturas)> <!-- ? Indica si un campo es opcional -->
+<!ELEMENT alumno (nombre,apellidos,direccion?,dni,(hombre|mujer),asignaturas)> <!-- ? Indica si un campo es opcional -->
+<!ATTLIST alumno codigo ID #REQUIRED>
 <!ELEMENT nombre (#PCDATA)> <!-- PCDATA == String -->
 <!ELEMENT apellidos (#PCDATA)>
 <!ELEMENT direccion (#PCDATA)>

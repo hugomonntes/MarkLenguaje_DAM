@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="ListaVentas.dtd" type="application/xml-dtd"?> <!-- Lo mismo que las líneas de abajo -->
+
+<listaventas>
+    <venta>
+        <importe></importe>
+        <comprador></comprador>
+        <vendedor></vendedor>
+        <fecha></fecha>
+        <codigoFactura></codigoFactura>
+    </venta>
+</listaventas>  

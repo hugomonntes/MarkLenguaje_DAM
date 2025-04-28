@@ -24,6 +24,7 @@
         <apellidos></apellidos>
         <direccion numero="" piso="" puerta=""></direccion>
         <dni></dni>
+        <hombre />
         <asignaturas>
             <asignatura>
                 <nombre></nombre>
@@ -38,6 +39,7 @@
         <apellidos></apellidos>
         <direccion numero="" piso="" puerta=""></direccion>
         <dni></dni>
+        <mujer />
         <asignaturas>
             <asignatura>
                 <nombre></nombre>

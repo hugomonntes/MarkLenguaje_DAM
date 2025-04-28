@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Productos.dtd" type="application/xml-dtd"?>
+<productos>
+    <producto>
+        <raton codigo="c" nombre="raton" descripcion="Raton"></raton>
+    </producto>
+    <producto>
+        <teclado codigo="b" nombre="teclado" descripcion="Teclado"></teclado>
+    </producto>
+    <producto>
+        <monitor codigo="a" nombre="monitor" descripcion="Monitor"></monitor>
+    </producto>
+</productos>
