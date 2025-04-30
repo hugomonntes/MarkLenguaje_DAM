@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Inventario.dtd" type="application/xml-dtd"?>
+
+<inventario>
+    <almacen>
+        <lapiz>
+            <dureza></dureza>
+        </lapiz>
+    </almacen>
+
+    <almacen>
+        <cuaderno>
+            <numhojas></numhojas>
+            <estilo></estilo>
+        </cuaderno>
+    </almacen>
+
+    <almacen>
+        <cuaderno>
+            <numhojas></numhojas>
+            <estilo></estilo>
+        </cuaderno>
+    </almacen>
+
+    <almacen>
+        <boligrafo>
+            <precio></precio>
+            <color></color>
+        </boligrafo>
+    </almacen>
+</inventario>
+
+<!-- 5. Un mayorista de productos de librería desea tener un formato de
+almacenamiento de datos para reflejar la información de su inventario.
+ El elemento raíz debe ser <inventario>
+ Dentro de inventario pueden ir
+elementos <lapiz> , <cuaderno> o <boligrafo> repetidos y en
+cualquier orden.
+ Todo <lapiz> puede tener un elemento <dureza>
+ Todo cuaderno debe llevar dos
+elementos: <numhojas> y <estilo>
+ Todo boligrafo lleva un <precio> y puede o no llevar un
+elemento <color> -->
