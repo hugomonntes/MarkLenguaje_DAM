@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="alumnos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="alumno" type="tipo_alumno" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="tipo_alumno">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"></xs:element>
+            <xs:element name="apellidos" type="xs:string"></xs:element>
+            <xs:element name="direccion" type="tipo_direccion"></xs:element>
+            <xs:element name="dni" type="tipo_dni"></xs:element>
+            <xs:choice>
+                <xs:element name="hombre">
+                    <xs:complexType></xs:complexType>
+                </xs:element>
+                <xs:element name="mujer">
+                    <xs:complexType></xs:complexType>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="asignaturas" type="tipo_asignaturas"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

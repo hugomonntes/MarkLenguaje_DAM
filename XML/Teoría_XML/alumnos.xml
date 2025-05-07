@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="alumnos.dtd" type="application/xml-dtd"?> <!-- Lo mismo que las líneas de abajo -->
+<?xml-model href="alumnos.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!-- <?xml-model href="alumnos.dtd" type="application/xml-dtd"?> Lo mismo que las líneas de abajo -->
 <!-- <!DOCTYPE alumnos SYSTEM "alumnos.dtd">
 <alumnos>
 </alumnos> -->
