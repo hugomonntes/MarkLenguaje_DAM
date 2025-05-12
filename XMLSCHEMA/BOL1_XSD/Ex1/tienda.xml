@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tienda.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<tienda>
+    <tallas>
+        <talla></talla>
+    </tallas>
+</tienda>
+
+<!-- Una tienda de ropa identifica las tallas mediante las letras (S, M, L) que corresponden a las siglas en
+ingles de (Short, Medium, Large). Si tenemos el documento XML <talla>M</talla>, crea un esquema
+XML que lo valide -->

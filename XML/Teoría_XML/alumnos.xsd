@@ -56,7 +56,7 @@
     <xs:complexType name="tipo_asignatura">
         <xs:sequence>
             <xs:element name="nombre" type="xs:string"></xs:element>
-            <xs:element name="codigo" type="tipo_codigo"></xs:element>
+            <xs:element name="codigo" type="xs:positiveInteger"></xs:element>
             <xs:element name="horas" type="xs:positiveInteger"></xs:element>
         </xs:sequence>
     </xs:complexType>
