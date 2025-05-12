@@ -38,4 +38,26 @@
             <xs:pattern value="\d{8}[A-Z]{1}"></xs:pattern> <!-- REGEXP -->
         </xs:restriction>
     </xs:simpleType>
+    <xs:complexType name="tipo_asignaturas">
+        <xs:sequence>
+            <xs:element name="asignatura" minOccurs="1" maxOccurs="unbounded" type="tipo_asignatura"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="tipo_codigo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{2}\d{2}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipo_puerta">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{1}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="tipo_asignatura">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"></xs:element>
+            <xs:element name="codigo" type="xs:positiveInteger"></xs:element>
+            <xs:element name="horas" type="xs:positiveInteger"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>

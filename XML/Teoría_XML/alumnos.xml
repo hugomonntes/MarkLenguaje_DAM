@@ -8,22 +8,22 @@
     <alumno codigo="FR92">
         <nombre></nombre>
         <apellidos></apellidos>
-        <direccion numero="" piso="" puerta=""></direccion>
-        <dni></dni>
+        <direccion numero="1" puerta="A"></direccion>
+        <dni>21111111X</dni>
         <hombre></hombre>
         <asignaturas>
             <asignatura>
                 <nombre></nombre>
-                <codigo></codigo>
-                <horas></horas>
+                <codigo>2</codigo>
+                <horas>2</horas>
             </asignatura>
         </asignaturas>
     </alumno>
 
-    <alumno codigo="HM20">
+    <!-- <alumno codigo="HM20">
         <nombre></nombre>
         <apellidos></apellidos>
-        <direccion numero="" piso="" puerta=""></direccion>
+        <direccion numero="" puerta=""></direccion>
         <dni></dni>
         <hombre />
         <asignaturas>
@@ -48,5 +48,5 @@
                 <horas></horas>
             </asignatura>
         </asignaturas>
-    </alumno>
+    </alumno> -->
 </alumnos>
