@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="AcademiaBaile.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<academia>
+    <bailes>
+        <baile>
+            <nombre></nombre>
+            <profesor></profesor>
+            <numeroAula></numeroAula>
+            <numeroPlazas></numeroPlazas>
+        </baile>
+    </bailes>
+    <alumnos>
+        <alumno>
+            <dni></dni>
+            <nombre></nombre>
+            <direccion></direccion>
+            <telefono></telefono>
+            <fechaNacimiento></fechaNacimiento>
+            <sexo></sexo>
+        </alumno>
+    </alumnos>
+</academia>
+
+
+<!--  El número de aula tendrá una longitud de 1 dígito.
+ El número de plazas ofertadas será en todos los casos menos de 25.
+
+También se han de almacenar los alumnos, con DNI, nombre,
+dirección, teléfono (que puede aparecer más de una vez), fecha de
+nacimiento, y el sexo que sólo podrá ser Hombre ó Mujer.
+
+ El DNI tendrá el formato de 8 dígitos, un guión y un carácter.
+Ejemplo 12345678-A
+ La fecha de nacimiento será de tipo xs:date, es decir con un
+formato aaaa-mm-dd
+ El campo sexo sólo podrá ser hombre o mujer.
+
+Y por último se han de almacenar los listados de clase con nombre
+del baile, días de la semana que se imparte, hora inicio y hora fin, y
+los DNIs de los alumnos inscritos en ese baile.
+ Ya que DNI aparece dos veces, se recomienda hacer un tipo propio
+y reutilizarlo. -->
