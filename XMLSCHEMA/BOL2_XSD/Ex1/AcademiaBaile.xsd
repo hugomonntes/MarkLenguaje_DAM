@@ -2,32 +2,47 @@
     <xs:element name="academia">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="bailes" minOccurs="1" maxOccurs="unbounded"></xs:element>
-                <xs:element name="alumnos" minOccurs="1" maxOccurs="1"></xs:element>
+                <xs:element name="bailes" type="tipo_bailes" minOccurs="1" maxOccurs="unbounded"></xs:element>
+                <xs:element name="alumnos" type="tipo_alumnos" minOccurs="1" maxOccurs="1"></xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="baile">
+    <xs:complexType name="tipo_bailes">
+        <xs:sequence>
+            <xs:element name="baile" type="tipo_baile" minOccurs="1" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tipo_baile">
         <xs:sequence>
             <xs:element name="nombre" type="xs:string"></xs:element>
             <xs:element name="profesor" type="xs:string"></xs:element>
-            <xs:element name="nombreAula" type="xs:string"></xs:element>
-            <xs:element name="numeroPlazas" type="xs:decimal"></xs:element>
+            <xs:element name="numeroAula" type="tipo_numeroAula"></xs:element>
+            <xs:element name="numeroPlazas" type="tipo_numero"></xs:element>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="alumno">
+    <xs:simpleType name="tipo_numeroAula">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:maxInclusive value="9"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="tipo_alumnos">
         <xs:sequence>
-            <!-- <xs:element name="dni" type="tipo_dni"></xs:element> -->
+            <xs:element name="alumno" type="tipo_alumno" minOccurs="1" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tipo_alumno">
+        <xs:sequence>
+            <xs:element name="dni" type="tipo_dni"></xs:element>
             <xs:element name="nombre"></xs:element>
             <xs:element name="direccion"></xs:element>
             <xs:element name="telefono"></xs:element>
-            <xs:element name="fechaNacimiento"></xs:element>
+            <xs:element name="fechaNacimiento" type="xs:date"></xs:element>
             <xs:element name="sexo"></xs:element>
         </xs:sequence>
     </xs:complexType>
-    <!-- <xs:simpleType name="tipo_dni"> //FIXME
-        <xs:restriction>
-            <xs:pattern value="[0-9]{8}[A-Z]{1}"></xs:pattern>
+    <xs:simpleType name="tipo_dni">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{8}[A-Z]{1}"></xs:pattern>
         </xs:restriction>
-    </xs:simpleType> -->
+    </xs:simpleType>
 </xs:schema>
