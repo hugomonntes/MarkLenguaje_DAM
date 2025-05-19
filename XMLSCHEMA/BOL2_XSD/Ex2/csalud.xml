@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="csalud.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<centroSalud>
+    <medicos>
+        <medico>
+            <numeroID></numeroID>
+            <nombre></nombre>
+            <especialidad></especialidad>
+            <sala></sala>
+        </medico>
+    </medicos>
+    <pacientes>
+        <paciente>
+            <dni></dni>
+            <nombre></nombre>
+            <direccion></direccion>
+            <telefono></telefono>
+            <numSS></numSS>
+            <fechaNacimiento></fechaNacimiento>
+            <sexo></sexo>
+        </paciente>
+    </pacientes>
+</centroSalud>
+
+<!-- 2.1 Por un lado deberán estar los médicos, con número de
+identificación, nombre, especialidad y sala donde realiza las citas.
+• El número de identificación tendrá una longitud de 5 caracteres.
+
+2.2 También se han de almacenar los pacientes, con DNI, nombre,
+dirección, teléfono (que puede aparecer más de una vez), Número de
+la Seguridad Social, fecha de nacimiento, y sexo. Estos campos
+tendrán las siguientes restricciones:
+• El DNI tendrá el formato de 8 dígitos y un carácter. Ejemplo
+12345678A
+• El teléfono se almacenará en grupos de 3 dígitos separados por
+guiones de la forma 555-555-555
+• Sexo sólo podrá contener las palabras “Hombre” o “Mujer”
+2.3 Por último se han de almacenar las citas, con fecha, número de 
+identificación del médico, DNI del paciente y el tratamiento.
+Tratamiento puede aparecer más de una vez.
+Ya que número de identificación y DNI más de una vez, se
+recomienda hacer un tipo propio y reutilizarlo. -->

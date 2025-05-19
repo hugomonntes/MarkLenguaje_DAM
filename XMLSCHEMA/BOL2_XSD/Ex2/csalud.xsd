@@ -1,0 +1,39 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="centroSalud">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="medicos" type="tipo_medicos"></xs:element>
+                <xs:element name="pacientes" type="tipo_pacientes"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="tipo_medicos">
+        <xs:sequence>
+            <xs:element name="medico" type="tipo_medico"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tipo_medico">
+        <xs:sequence>
+            <xs:element name="numeroID"></xs:element>
+            <xs:element name="nombre"></xs:element>
+            <xs:element name="especialidad"></xs:element>
+            <xs:element name="sala"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tipo_pacientes">
+        <xs:sequence>
+            <xs:element name="paciente" type="tipo_paciente"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tipo_paciente">
+        <xs:sequence>
+            <xs:element name="dni"></xs:element>
+            <xs:element name="nombre"></xs:element>
+            <xs:element name="direccion"></xs:element>
+            <xs:element name="telefono"></xs:element>
+            <xs:element name="numSS"></xs:element>
+            <xs:element name="fechaNacimiento"></xs:element>
+            <xs:element name="sexo"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
