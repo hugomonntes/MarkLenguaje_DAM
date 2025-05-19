@@ -33,16 +33,33 @@
     <xs:complexType name="tipo_alumno">
         <xs:sequence>
             <xs:element name="dni" type="tipo_dni"></xs:element>
-            <xs:element name="nombre"></xs:element>
-            <xs:element name="direccion"></xs:element>
-            <xs:element name="telefono"></xs:element>
+            <xs:element name="nombre" type="xs:string"></xs:element>
+            <xs:element name="direccion" type="xs:string"></xs:element>
+            <xs:element name="telefono" type="tipo_telefono"></xs:element>
             <xs:element name="fechaNacimiento" type="xs:date"></xs:element>
-            <xs:element name="sexo"></xs:element>
+            <xs:element name="sexo" type="tipo_sexo"></xs:element>
         </xs:sequence>
     </xs:complexType>
     <xs:simpleType name="tipo_dni">
         <xs:restriction base="xs:string">
             <xs:pattern value="\d{8}[A-Z]{1}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipo_numero">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:maxInclusive value="25"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipo_telefono">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{9}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipo_sexo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Hombre"></xs:enumeration>
+            <xs:enumeration value="Mujer"></xs:enumeration>
+            <xs:enumeration value="Otro"></xs:enumeration>
         </xs:restriction>
     </xs:simpleType>
 </xs:schema>
