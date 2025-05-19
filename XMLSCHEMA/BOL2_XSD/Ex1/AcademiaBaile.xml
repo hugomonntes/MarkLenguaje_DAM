@@ -17,9 +17,18 @@
             <direccion></direccion>
             <telefono>674586932</telefono>
             <fechaNacimiento>2025-01-01</fechaNacimiento>
-            <sexo>Hombre</sexo>
+            <sexo>mujer</sexo>
         </alumno>
     </alumnos>
+    <listado>
+        <nombreBaile></nombreBaile>
+        <diasImparte>Lunes</diasImparte>
+        <horaInicio>22:30:00</horaInicio>
+        <horaFin>23:30:00</horaFin>
+        <dnis>
+            <dni>21111186X</dni>
+        </dnis>
+    </listado>
 </academia>
 
 

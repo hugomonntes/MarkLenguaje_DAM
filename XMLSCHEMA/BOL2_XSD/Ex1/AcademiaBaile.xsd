@@ -4,6 +4,7 @@
             <xs:sequence>
                 <xs:element name="bailes" type="tipo_bailes" minOccurs="1" maxOccurs="unbounded"></xs:element>
                 <xs:element name="alumnos" type="tipo_alumnos" minOccurs="1" maxOccurs="1"></xs:element>
+                <xs:element name="listado" type="tipo_listado"></xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -57,9 +58,28 @@
     </xs:simpleType>
     <xs:simpleType name="tipo_sexo">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="Hombre"></xs:enumeration>
-            <xs:enumeration value="Mujer"></xs:enumeration>
-            <xs:enumeration value="Otro"></xs:enumeration>
+            <!-- <xs:enumeration value="Hombre"></xs:enumeration>
+            <xs:enumeration value="Mujer"></xs:enumeration> -->
+            <xs:pattern value="(H|h)ombre|(M|m)ujer"></xs:pattern>
         </xs:restriction>
     </xs:simpleType>
+    <xs:complexType name="tipo_listado">
+        <xs:sequence>
+            <xs:element name="nombreBaile" type="xs:string"></xs:element>
+            <xs:element name="diasImparte" type="tipo_dias"></xs:element>
+            <xs:element name="horaInicio" type="xs:time"></xs:element>
+            <xs:element name="horaFin" type="xs:time"></xs:element>
+            <xs:element name="dnis"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="tipo_dias">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(l|L)unes|(m|M)Martes|(m|M)iercoles|(j|J)ueves|(v|V)iernes|(s|S)abado"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="dnis">
+        <xs:sequence>
+            <xs:element name="dni" type="tipo_dni"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>
