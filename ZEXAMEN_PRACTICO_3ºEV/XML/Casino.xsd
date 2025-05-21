@@ -27,7 +27,8 @@
     </xs:simpleType>
     <xs:simpleType name="tipo_importe">
         <xs:restriction base="xs:decimal">
-            <xs:minExclusive value="0"></xs:minExclusive>
+            <xs:minExclusive value="0.01"></xs:minExclusive>
+            <xs:maxInclusive value="100000000"></xs:maxInclusive>
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="tipo_fecha">

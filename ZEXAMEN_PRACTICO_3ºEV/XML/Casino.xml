@@ -4,7 +4,7 @@
     <apuesta numeroApuesta="1">
         <juego>Blackjack</juego>
         <premio>si</premio>
-        <importe>20.0</importe>
+        <importe>11111120.0</importe>
         <fecha>18/05/2025</fecha>
     </apuesta>
 </casino>
