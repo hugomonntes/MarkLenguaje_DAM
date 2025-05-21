@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validarDatos(){
+            let nombre = document.getElementById("nombre");
+            if(nombre.innerHTML == ""){
+                // Mensaje Error
+            } else {
+                nombre.style.borderColor = "green"
+            }
+        }
+    
+        window.onload = function(){
+            this.addEventListener(load, validarDatos);
+        }
+    </script>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Juan">
+        <br>
+        <label for="Apellidos">Apellidos:</label>
+        <input type="text" placeholder="Sanchez">
+        <br>
+        <label for="NumNoches">Numero de Noches:</label>
+        <input type="number" placeholder="2">
+        <br>
+        <label for="tipoHabitacion">Tipo Habitacion:</label>
+        <input type="radio" name="tipoH" id="Normal">
+        <label for="tipoHabitacion">Normal</label>
+        <input type="radio" name="tipoH" id="Luxury">
+        <label for="tipoHabitacion">Luxury</label>
+        <input type="radio" name="tipoH" id="Familiar">
+        <label for="tipoHabitacion">Familiar</label>
+        <br>
+        <span id="resultado"></span>
+        <br>
+        <button id="Enviar">Enviar</button>
+    </form>
+</body>
+</html>
