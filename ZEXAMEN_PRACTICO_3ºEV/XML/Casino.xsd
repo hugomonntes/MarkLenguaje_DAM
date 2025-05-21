@@ -8,11 +8,12 @@
     </xs:element>
     <xs:complexType name="tipo_apuesta">
         <xs:sequence>
-            <xs:element name="juego"   type="tipo_juego"></xs:element>
+            <xs:element name="juego"  type="tipo_juego"></xs:element>
             <xs:element name="premio"  type="tipo_premio"></xs:element>
             <xs:element name="importe" type="tipo_importe"></xs:element>
-            <xs:element name="fecha"   type="xs:date"></xs:element>
+            <xs:element name="fecha"   type="tipo_fecha"></xs:element>
         </xs:sequence>
+        <xs:attribute name="numeroApuesta" type="xs:positiveInteger"></xs:attribute>
     </xs:complexType>
     <xs:simpleType name="tipo_juego">
         <xs:restriction base="xs:string">
@@ -27,6 +28,11 @@
     <xs:simpleType name="tipo_importe">
         <xs:restriction base="xs:decimal">
             <xs:minExclusive value="0"></xs:minExclusive>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipo_fecha">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{2}/\d{2}/\d{4}"></xs:pattern>
         </xs:restriction>
     </xs:simpleType>
 </xs:schema>

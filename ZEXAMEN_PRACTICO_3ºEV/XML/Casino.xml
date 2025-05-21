@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="Casino.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <casino>
-    <apuesta numeroApuesta="">
+    <apuesta numeroApuesta="1">
         <juego>Blackjack</juego>
         <premio>si</premio>
-        <importe></importe>
-        <fecha></fecha>
+        <importe>20.0</importe>
+        <fecha>18/05/2025</fecha>
     </apuesta>
 </casino>
 <!-- 1. Un casino cuenta con los siguientes juegos ruleta, blackjack y
