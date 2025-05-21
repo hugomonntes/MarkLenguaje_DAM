@@ -1,0 +1,32 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="casino">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="apuesta" type="tipo_apuesta"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="tipo_apuesta">
+        <xs:sequence>
+            <xs:element name="juego"   type="tipo_juego"></xs:element>
+            <xs:element name="premio"  type="tipo_premio"></xs:element>
+            <xs:element name="importe" type="tipo_importe"></xs:element>
+            <xs:element name="fecha"   type="xs:date"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="tipo_juego">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(B|b)lackjack|(R|r)uleta|(T|t)ragaperra"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipo_premio">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(S|s)i|(N|n)o"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipo_importe">
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0"></xs:minExclusive>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Casino.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<casino>
+    <apuesta numeroApuesta="">
+        <juego>Blackjack</juego>
+        <premio>si</premio>
+        <importe></importe>
+        <fecha></fecha>
+    </apuesta>
+</casino>
+<!-- 1. Un casino cuenta con los siguientes juegos ruleta, blackjack y
+tragaperras, para cada apuesta almacena en un documento XML los
+siguientes datos:
+• Número de apuesta (atributo dentro de la etiqueta apuesta)
+• Tipo de juego. Solo admitirá las opciones ruleta, blackjack o
+tragaperras.
+• Premio. Admitirá dos valores Sí o No
+• Importe. Se comprobará que el premio esté comprendido entre
+0.01 y 100000000. Este campo puede aparecer o no.
+• Fecha. La fecha tendrá un formato tipo dd/mm/aaaa
+Se pide crear el XML y su correspondiente esquema de validación. -->
