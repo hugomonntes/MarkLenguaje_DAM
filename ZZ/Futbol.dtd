@@ -1,0 +1,13 @@
+<!ELEMENT LugonpasFC (estadio, personal)>
+<!ELEMENT estadio (apertura, capacidad)>
+<!ELEMENT apertura (Si|No)>
+<!ELEMENT Si EMPTY>
+<!ELEMENT No EMPTY>
+<!ATTLIST jugadores dorsal ID #REQUIRED>
+<!ELEMENT capacidad (#PCDATA)>
+<!ELEMENT personal (entrenadores, utillero, jugadores)>
+<!ELEMENT entrenadores (nombre)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT utillero (nombre)>
+<!ELEMENT jugadores (nombre)>
+<!ATTLIST jugadores dorsal ID #REQUIRED>

@@ -1,0 +1,59 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="LugonpasFC">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="estadio" type="tipo_estadio"></xs:element>
+                <xs:element name="personal" type="tipo_personal"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="tipo_estadio">
+        <xs:sequence>
+            <xs:element name="apertura" type="tipo_apertura"></xs:element>
+            <xs:element name="capacidad" type="tipo_capacidad">
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tipo_capacidad">
+        <xs:simpleContent>
+            <xs:extension base="xs:positiveInteger">
+                <xs:attribute name="diegocosta" type="xs:string"></xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="tipo_apertura">
+        <xs:choice>
+            <xs:element name="Si"></xs:element>
+            <xs:element name="No"></xs:element>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="tipo_personal">
+        <xs:sequence>
+            <xs:element name="entrenadores" type="tipo_entrenadores"></xs:element>
+            <xs:element name="utillero" type="tipo_utillero"></xs:element>
+            <xs:element name="jugadores" type="tipo_jugadores"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tipo_entrenadores">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"></xs:element>
+            <xs:element name="dni" type="tipo_dni"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tipo_utillero">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tipo_jugadores">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="dorsal" type="xs:positiveInteger" use="required"></xs:attribute>
+    </xs:complexType>
+    <xs:simpleType name="tipo_dni">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{8}[A-Za-z]"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

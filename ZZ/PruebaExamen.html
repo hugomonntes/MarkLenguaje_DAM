@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function validar(){
+        let validity;
+        let info = document.getElementById("info");
+        let regex = /^[A-Za-z]+$/;
+        let nombre = document.querySelector('input[type="text"]');
+        if(nombre.value == "" || regex.test(nombre.value) == false){
+            nombre.style.color = "red";
+            validity = false;
+        } else {
+            nombre.style.color = "green";
+            validity = true;
+        }
+        
+        let email = document.querySelector('input[type="email"]');
+        let regexEmail = /^[A-Za-z0-9]+@[A-Za-z]+\.[a-z]{2,3}$/;
+        if(email.value == "" || !regexEmail.test(email.value)){
+            email.style.color = "red"
+            validity = false;
+        } else {
+            validity = true;
+            email.style.color = "green"
+        }
+        
+        let pass = document.querySelector('input[type="password"]');
+        let regexPass = /^[A-Za-z0-9]{8}$/;
+        if(pass.value == "" || !regexPass.test(pass.value)){
+            validity = false;
+            pass.style.color = "red";
+        } else {
+            validity = true;
+            pass.style.color = "green";
+        }
+
+        let img = document.querySelector('input[type="file"]');
+        if(!img.file){
+            img.style.color = "red";
+        } else {
+            img.style.color = "green";
+        }
+
+        let idiomas = document.getElementsByName("idiomas")[0];
+        let cadaIdioma = idiomas.options[idiomas.selectedIndex].value;
+
+        let tipoGenero;
+        let generoo = document.getElementsByName("genero");
+        for (let i = 0; i < generoo.length; i++) {
+            if (generoo[i].checked) {
+                validity = true;
+                tipoGenero = generoo[i].value;
+            } else {
+                validity = false;
+            }
+        }
+
+        if(validity){
+            info.innerHTML += nombre.value + "<br>";
+            info.innerHTML += email.value + "<br>";
+            info.innerHTML += pass.value + "<br>";
+            info.innerHTML += cadaIdioma + "<br>";
+            info.innerHTML += tipoGenero;
+        }
+    }
+
+    window.onload = function(){
+        let nombre = document.querySelector('input[type="text"]');
+        nombre.addEventListener("input", validar);
+
+        let email = document.querySelector('input[type="email"]');
+        email.addEventListener("input", validar);
+
+        let pass = document.querySelector('input[type="password"]');
+        pass.addEventListener("input", validar);
+
+        let img = document.querySelector('input[type="file"]');
+        img.addEventListener("input", validar);
+    }
+</script>
+<body>
+    <form action="" method="post">
+        <input type="text" placeholder="Nombre"><br>
+        <input type="email" placeholder="Email"><br>
+        <input type="password" placeholder="Contraseña"><br>
+        
+        <h1>Idiomas</h1>
+        <select name="idiomas" id="idiomas">
+            <option value="español">Español</option>
+            <option value="ingles">Ingles</option>
+            <option value="frances">Frances</option>
+        </select>
+
+        <h1>Genero</h1>
+        <label>Hombre</label>
+        <input type="radio" name="genero" value="Hombre">
+        <label>Mujer</label>
+        <input type="radio" name="genero" value="Mujer">
+        <label>Otro</label>
+        <input type="radio" name="genero" value="Otro">
+        <br>
+        <input type="file"><br>
+        <input type="button" value="Enviar">
+
+        <div id="info"></div>
+    </form>
+</body>
+</html>

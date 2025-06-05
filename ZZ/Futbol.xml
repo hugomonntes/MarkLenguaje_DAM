@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-model href="Futbol.dtd" type="application/xml-dtd"?> -->
+<?xml-model href="Futbol.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<LugonpasFC>
+    <estadio>
+        <apertura>
+            <Si/>
+        </apertura>
+        <capacidad diegocosta="7">20000</capacidad>
+    </estadio>
+    <personal>
+        <entrenadores>
+            <nombre></nombre>
+            <dni>20000000X</dni>
+        </entrenadores>
+        <utillero>
+            <nombre></nombre>
+        </utillero>
+        <jugadores dorsal="10">
+            <nombre></nombre>
+        </jugadores>
+    </personal>
+</LugonpasFC>
