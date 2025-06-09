@@ -7,40 +7,40 @@
 </head>
 <script>
     function validar(){
-        let validity;
+        let isChecked = true;
         let info = document.getElementById("info");
         let regex = /^[A-Za-z]+$/;
         let nombre = document.querySelector('input[type="text"]');
         if(nombre.value == "" || regex.test(nombre.value) == false){
             nombre.style.color = "red";
-            validity = false;
+            isChecked = false;
         } else {
             nombre.style.color = "green";
-            validity = true;
+            isChecked = true;
         }
         
         let email = document.querySelector('input[type="email"]');
         let regexEmail = /^[A-Za-z0-9]+@[A-Za-z]+\.[a-z]{2,3}$/;
         if(email.value == "" || !regexEmail.test(email.value)){
             email.style.color = "red"
-            validity = false;
+            isChecked = false;
         } else {
-            validity = true;
+            isChecked = true;
             email.style.color = "green"
         }
         
         let pass = document.querySelector('input[type="password"]');
-        let regexPass = /^[A-Za-z0-9]{8}$/;
-        if(pass.value == "" || !regexPass.test(pass.value)){
-            validity = false;
+        // let regexPass = /^[A-Za-z0-9]{8}$/;
+        if(pass.value == "" || pass.validity.tooShort){
+            isChecked = false;
             pass.style.color = "red";
         } else {
-            validity = true;
+            isChecked = true;
             pass.style.color = "green";
         }
 
         let img = document.querySelector('input[type="file"]');
-        if(!img.file){
+        if(!img.file || img.files.length === 0){
             img.style.color = "red";
         } else {
             img.style.color = "green";
@@ -49,18 +49,23 @@
         let idiomas = document.getElementsByName("idiomas")[0];
         let cadaIdioma = idiomas.options[idiomas.selectedIndex].value;
 
-        let tipoGenero;
+        let tipoGenero = "";
         let generoo = document.getElementsByName("genero");
+        let generoSeleccionado = false;
+
         for (let i = 0; i < generoo.length; i++) {
             if (generoo[i].checked) {
-                validity = true;
                 tipoGenero = generoo[i].value;
-            } else {
-                validity = false;
+                generoSeleccionado = true;
+                break;
             }
         }
 
-        if(validity){
+        if (!generoSeleccionado) {
+            isChecked = false;
+        }
+
+        if(isChecked){
             info.innerHTML += nombre.value + "<br>";
             info.innerHTML += email.value + "<br>";
             info.innerHTML += pass.value + "<br>";
@@ -70,24 +75,15 @@
     }
 
     window.onload = function(){
-        let nombre = document.querySelector('input[type="text"]');
-        nombre.addEventListener("input", validar);
-
-        let email = document.querySelector('input[type="email"]');
-        email.addEventListener("input", validar);
-
-        let pass = document.querySelector('input[type="password"]');
-        pass.addEventListener("input", validar);
-
-        let img = document.querySelector('input[type="file"]');
-        img.addEventListener("input", validar);
+        let boton = document.getElementById("btn");
+        btn.addEventListener("click", validar)
     }
 </script>
 <body>
     <form action="" method="post">
-        <input type="text" placeholder="Nombre"><br>
-        <input type="email" placeholder="Email"><br>
-        <input type="password" placeholder="Contraseña"><br>
+        <input type="text" placeholder="Nombre" required><br>
+        <input type="email" placeholder="Email" required><br>
+        <input type="password" placeholder="Contraseña" required minlength="5"><br>
         
         <h1>Idiomas</h1>
         <select name="idiomas" id="idiomas">
@@ -98,14 +94,14 @@
 
         <h1>Genero</h1>
         <label>Hombre</label>
-        <input type="radio" name="genero" value="Hombre">
+        <input type="radio" name="genero" value="Hombre" checked>
         <label>Mujer</label>
         <input type="radio" name="genero" value="Mujer">
         <label>Otro</label>
         <input type="radio" name="genero" value="Otro">
         <br>
         <input type="file"><br>
-        <input type="button" value="Enviar">
+        <input type="button" id="btn" value="Enviar">
 
         <div id="info"></div>
     </form>
